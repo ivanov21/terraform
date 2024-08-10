@@ -8,6 +8,12 @@ on:
 jobs:
 
 
+
+  build:
+    runs-on: ubuntu-20.04                    # similar to "image" in GitLab
+    steps:
+      - run: echo "This is a build step"
+
   tflint:
     runs-on: ubuntu-20.04
     steps:
